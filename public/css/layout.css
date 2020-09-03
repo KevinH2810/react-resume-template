@@ -66,7 +66,7 @@ header .banner-text h1 {
 }
 header .banner-text h3 {
    font: 18px/1.9em 'librebaskerville-regular', serif;
-   color: #A8A8A8;
+   color: #f7f7f7;
    margin: 0 auto;
    width: 70%;
    text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
@@ -94,6 +94,13 @@ header .social li {
    margin: 0 15px;
    padding: 0;
 }
+
+header .social img{ 
+   max-width: 2.5%;
+   height: auto;
+   margin: -3px;
+}
+
 header .social li a { color: #fff; }
 header .social li a:hover { color: #11ABB0; }
 
@@ -203,7 +210,7 @@ ul#nav li.current a { color: #F06000; }
 }
 #about p {
    line-height: 30px;
-   color: #7A7A7A;
+   color: #ffffff;
 }
 #about .profile-pic {
    position: relative;
@@ -211,6 +218,7 @@ ul#nav li.current a { color: #F06000; }
    height: 120px;
    border-radius: 100%;
 }
+
 #about .contact-details { width: 41.66667%; }
 #about .download {
    width: 58.33333%;
@@ -258,10 +266,46 @@ ul#nav li.current a { color: #F06000; }
    font: 25px/30px 'opensans-bold', sans-serif;
 }
 
+#resume .wrapper {
+   display: grid;
+   grid-template-columns: 200px 200px 200px;
+ }
+
 #resume .header-col { padding-top: 9px; }
 #resume .main-col { padding-right: 10%; }
+#resume div.gallery img {
+   width: 100%;
+   height: auto;
+ }
+ 
+ #resume div.desc {
+   text-align: center;
+ }
+ 
+ #resume * {
+   box-sizing: border-box;
+ }
+ 
+ #resume .responsive {
+   padding: 0 6px;
+   float: left;
+   width: 30%;
+ }
+ 
+ @media only screen and (max-width: 700px) {
+   .responsive {
+     width: 49.99999%;
+     margin: 6px 0;
+   }
+ }
+ 
+ @media only screen and (max-width: 500px) {
+   .responsive {
+     width: 100%;
+   }
+ }
 
-.education, .work {
+.education, .work , .tools{
    margin-bottom: 48px;
    padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
@@ -276,10 +320,39 @@ ul#nav li.current a { color: #F06000; }
    margin-right: 5px;
    margin-left: 5px;
 }
+
 #resume .date {
    font: 15px/24px 'opensans-regular', sans-serif;
    margin-top: 6px;
 }
+
+.responsive .item-wrap .link-icon {
+   display: block;
+   color: #fff;
+   height: 30px;
+   width: 30px;
+   font-size: 18px;
+   line-height: 30px;
+   text-align: center;
+
+   opacity: 0;
+	-moz-opacity: 0;
+	filter:alpha(opacity=0);
+
+   -webkit-transition: opacity 0.3s ease-in-out;
+	-moz-transition: opacity 0.3s ease-in-out;
+	-o-transition: opacity 0.3s ease-in-out;
+	transition: opacity 0.3s ease-in-out;
+
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   margin-left: -15px;
+   margin-top: -15px;
+}
+
+#Resume .columns { margin-bottom: 36px; }
+
 
 /*----------------------------------------------*/
 /*	Skill Bars
@@ -294,11 +367,11 @@ ul#nav li.current a { color: #F06000; }
 .bars .skills {
   	margin-top: 36px;
    list-style: none;
+   border-bottom: 1px solid #E8E8E8;
 }
 .bars li {
    position: relative;
   	margin-bottom: 60px;
-  	background: #ccc;
   	height: 42px;
   	border-radius: 3px;
 }
@@ -324,11 +397,32 @@ ul#nav li.current a { color: #F06000; }
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
-/*
+
 .git {
   	-moz-animation: git 2s ease;
   	-webkit-animation: git 2s ease;
 }
+
+.mongodb {
+   -moz-animation: mongodb 2s ease;
+   -webkit-animation: mongodb 2s ease;
+}
+
+@-moz-keyframes git {
+   0%   { width: 0px;  }
+   100% { width: 60%;  }
+ }
+
+ @-moz-keyframes mongodb {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ }
+
+ @-webkit-keyframes mongodb {
+   0%   { width: 0px;  }
+   100% { width: 80%;  }
+ } 
+/*
 .illustrator {
   	-moz-animation: illustrator 2s ease;
   	-webkit-animation: illustrator 2s ease;
@@ -349,15 +443,8 @@ ul#nav li.current a { color: #F06000; }
   	-moz-animation: vuejs 2s ease;
   	-webkit-animation: vuejs 2s ease;
 }
-.mongodb {
-  	-moz-animation: mongodb 2s ease;
-  	-webkit-animation: mongodb 2s ease;
-}
 
-@-moz-keyframes git {
-  0%   { width: 0px;  }
-  100% { width: 60%;  }
-}
+
 @-moz-keyframes illustrator {
   0%   { width: 0px;  }
   100% { width: 55%;  }
@@ -378,10 +465,7 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
-@-moz-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}
+
 
 @-webkit-keyframes photoshop {
   0%   { width: 0px;  }
@@ -407,10 +491,7 @@ ul#nav li.current a { color: #F06000; }
   0%   { width: 0px;  }
   100% { width: 50%;  }
 }
-@-webkit-keyframes mongodb {
-  0%   { width: 0px;  }
-  100% { width: 80%;  }
-}  */
+ */
 
 /* ------------------------------------------------------------------ */
 /* e. Portfolio Section

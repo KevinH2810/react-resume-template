@@ -1,117 +1,136 @@
 {
   "main": {
-    "name":"Tim Baker",
-    "occupation":"(Your Occupation Here)",
-    "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
-    "image":"profilepic.jpg",
-    "bio":"Use this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
-    "email": "youremailhere@gmail.com",
-    "phone": "555-555-5555",
+    "name":"Kevin Hadi Sutanto",
+    "occupation":"Software Engineer",
+    "description":"Blockchain Backend Software Engineer with a demonstrated history of working in the computer software industry",
+    "image":"profilepic.png",
+    "bio":"Have some experience in Go,  Node.js, Python, MS SQL, NoSQL and Docker. Strong engineering professional graduated from Dian Nuswantoro University. Likes to read Novel, Sing a song, doing sports (Badminton and Muay Thai) and traveling.",
+    "contactmessage":"It would be my pleasure to be able to be working with you.",
+    "email": "kevinhadisutanto@gmail.com",
+    "phone": "(+62)81215399898",
     "address":{
-      "street":"(Your Street)",
-      "city":"(Your City)",
-      "state":"(Your State)",
-      "zip": "(Your Zip/Postal Code)"
+      "street":"Pondok Indah III No.17",
+      "city":"Denpasar",
+      "state":"Bali",
+      "zip": "52111"
     },
-    "website": "http://www.timbakerdev.com",
-    "resumedownload":"http://timbakerdev.com",
+    "website": "",
+    "resumedownload":"https://drive.google.com/file/d/16Knky7AyCLnMpvvwEx_rIptupdti2kPH/view?usp=sharing",
     "social":[
       {
-        "name":"facebook",
-        "url":"http://facebook.com/tim.baker.906",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
-        "name":"google-plus",
-        "url":"http://googleplus.com/tbakerx",
-        "className":"fa fa-google-plus"
-      },
-      {
         "name":"linkedin",
-        "url":"https://www.linkedin.com/in/tim-baker-8420009a/",
+        "url":"https://www.linkedin.com/in/kevin-hadi-sutanto-627591174/",
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
-      },
-      {
         "name":"github",
-        "url":"http://github.com/tbakerx",
+        "url":"https://github.com/KevinH2810",
         "className":"fa fa-github"
       },
       {
         "name":"skype",
-        "url":"http://skype.com",
+        "url":"https://join.skype.com/invite/YIEQqqEvK0Ig",
         "className":"fa fa-skype"
       }
-    ]
+    ],
+    "extraSocial":
+      {
+        "name":"codewars",
+        "url":"https://www.codewars.com/users/kevinhadisutanto",
+        "image":"codewars.svg"
+      }
   },
   "resume":{
     "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
     "education":[
       {
-        "school":"University?",
-        "degree":"Masters in Beer tasting",
-        "graduated":"April 2007",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"University of Dian Nuswantoro",
+        "degree":"Bachelor of Computer Science",
+        "graduated":"December 2017",
+        "description":"I learn about the basic of programming on college such as using C++, Java and using Android and Django to develop my Image Processing as my thesis to detect faces on the photo taken by phone. And for my part-time, i learn how to use Codeigniter to develop a news website using crawling technique to get the data from other websites."
       },
       {
-        "school":"School #1 Maybe College?",
-        "degree":"What did you study 101",
-        "graduated":"March 2003",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "school":"Senior High School 2",
+        "degree":"High School",
+        "graduated":"June 2013",
+        "description":"I joined scouts to develop my leadershipsand participate in my church youth organizations."
       }
     ],
     "work":[
       {
-        "company":"Awesome Design Studio",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Blockchain Zoo",
+        "title":"Technical Associate",
+        "years":"May 2019 - Present",
+        "description":"Im developing the Blockchain Explorer with my main team on the scheduler for parsing and process the data and api to relay the data to api to the UI using NodeJS, and helping the core team in developing the core application sometimes. Once my boss asked me to develop the unit testing to stress test the core to test its endurance. We are using Git for versioning and MongoDB for the explorer database."
       },
       {
-        "company":"Super Cool Studio",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "company":"Clientsolve",
+        "title":"Quality Assurance",
+        "years":"March 2019 - May 2019",
+        "description":"Work to ensure that the quality of the code meets the standart criteria and implements to the users."
+      },
+      {
+        "company":"BSC",
+        "title":"Junior IT Consultant",
+        "years":"January 2018 - January 2019",
+        "description":"Handling HRIS and SAP company's product for clients internal software and consulting. technology used : MS Sql Server and Alpha Anywhere."
       }
     ],
-    "skills":[
+    "tools":[
       {
         "name":"Git",
-        "level":"60%"
+        "level":"80%",
+        "image":"github.png",
+        "url": "https://github.com/"
       },
       {
-        "name":"Illustrator",
-        "level":"55%"
+        "name":"NodeJS",
+        "level":"80%",
+        "image":"nodejs.png",
+        "url": "https://nodejs.org/en/"
       },
       {
-        "name":"ReactJs",
-        "level":"50%"
+        "name":"Golang",
+        "level":"70%",
+        "image":"golang.png",
+        "url": "https://golang.org/"
       },
       {
-        "name":"CSS",
-        "level":"90%"
-      },
-      {
-        "name":"HTML5",
-        "level":"80%"
-      },
-      {
-        "name":"VueJs",
-        "level":"50%"
+        "name":"Docker",
+        "level":"50%",
+        "image":"docker.png",
+        "url":"https://www.docker.com/"
       },
       {
         "name":"MongoDB",
-        "level":"80%"
+        "level":"80%",
+        "image":"mongodb.png",
+        "url": "https://www.mongodb.com/"
+      },
+      {
+        "name":"SQLite",
+        "level":"80%",
+        "image":"sqlite.png",
+        "url":"https://www.sqlite.org/index.html"
+      },
+      {
+        "name":"MS SQL",
+        "level":"90%",
+        "image":"ssms.png",
+        "url":"https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15"
+      },
+      {
+        "name":"Postgresql",
+        "level":"90%",
+        "image":"postgresql.png",
+        "url":"https://www.postgresql.org/"
+      }
+    ],
+    "courses":[
+      {
+        "name": "Hacktiv8",
+        "url":"https://hacktiv8.com/verify/glng/kevin-hadi-sutanto/",
+        "image":"images/skill/hacktiv8.png"
       }
     ]
   },

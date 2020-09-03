@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'; 
 
 class Header extends Component {
   render() {
@@ -11,6 +11,8 @@ class Header extends Component {
       var networks= this.props.data.social.map(function(network){
         return <li key={network.name}><a href={network.url}><i className={network.className}></i></a></li>
       })
+      // var codewars= "images/"+this.props.data.extraSocial.image;
+      // var codewars_path = this.props.data.extraSocial.url;
     }
 
     return (
@@ -34,11 +36,12 @@ class Header extends Component {
 
       <div className="row banner">
          <div className="banner-text">
-            <h1 className="responsive-headline">I'm {name}.</h1>
+            <h1 className="responsive-headline">I'm {name}</h1>
             <h3>I'm a {city} based <span>{occupation}</span>. {description}.</h3>
             <hr />
             <ul className="social">
                {networks}
+               {/* <a href={codewars_path}><img className="codewars"  src={codewars} alt="Codewars" /></a> */}
             </ul>
          </div>
       </div>

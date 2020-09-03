@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Row, Column } from 'react-foundation';
 
 class Resume extends Component {
   render() {
@@ -16,9 +17,22 @@ class Resume extends Component {
             <p>{work.description}</p>
         </div>
       })
-      var skills = this.props.data.skills.map(function(skills){
-        var className = 'bar-expand '+skills.name.toLowerCase();
-        return <li key={skills.name}><span style={{width:skills.level}}className={className}></span><em>{skills.name}</em></li>
+      var tools = this.props.data.tools.map(function(tools){
+        // return <div><em>{tools.name}</em></div>
+        // return  <Column>{tools.name}</Column>
+        return <div key={tools.title} className="columns portfolio-item">
+        <div className="item-wrap" style={{background: "transparent"}}>
+         <a href={tools.url} title={tools.title}>
+            <img  src={`Images/Skill/${tools.image}`} style={{height: "90px"}}/>
+            <div className="overlay">
+               <div className="portfolio-item-meta">
+              <h5>{tools.name}</h5>
+               </div>
+             </div>
+           <div className="link-icon"><i className="fa fa-link"></i></div>
+         </a>
+       </div>
+     </div>
       })
     }
 
@@ -51,26 +65,44 @@ class Resume extends Component {
         </div>
     </div>
 
+      <div className="row tools">
 
-
-      <div className="row skill">
+         <div className="twelve columns collapsed">
 
          <div className="three columns header-col">
-            <h1><span>Skills</span></h1>
+            <h1><span>Tools</span></h1>
          </div>
-
-         <div className="nine columns main-col">
-
-            <p>{skillmessage}
-            </p>
-
-				<div className="bars">
-				   <ul className="skills">
-					  {skills}
-					</ul>
-				</div>
-			</div>
+          <div className="nine columns main-col">
+          <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+                {tools}
+            </div>
+          </div>
+            
+          </div>
       </div>
+
+      <div className="row">
+
+         <div className="twelve columns collapsed">
+
+         <div className="three columns header-col">
+            <h1><span>Courses</span></h1>
+         </div>
+          <div className="nine columns main-col">
+          <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
+          <div class="columns responsive">
+      <div class="item-wrap">
+        <a target="_blank" href="https://hacktiv8.com/verify/glng/kevin-hadi-sutanto/">
+          <img src="images/skill/hacktiv8.png" alt="hacktiv8"/>
+        </a>
+      </div>
+    </div>
+            </div>
+          </div>
+            
+          </div>
+      </div>
+
    </section>
     );
   }
