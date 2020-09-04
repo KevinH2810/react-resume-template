@@ -114,7 +114,7 @@
         "url":"https://www.sqlite.org/index.html"
       },
       {
-        "name":"MS SQL",
+        "name":"MS SQL Server",
         "level":"90%",
         "image":"ssms.png",
         "url":"https://docs.microsoft.com/en-us/sql/ssms/download-sql-server-management-studio-ssms?view=sql-server-ver15"

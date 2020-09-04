@@ -90,8 +90,8 @@ class Resume extends Component {
          </div>
           <div className="nine columns main-col">
           <div id="portfolio-wrapper" className="bgrid-quarters s-bgrid-thirds cf">
-          <div class="columns responsive">
-      <div class="item-wrap">
+          <div className="columns responsive">
+      <div className="item-wrap">
         <a target="_blank" href="https://hacktiv8.com/verify/glng/kevin-hadi-sutanto/">
           <img src="images/skill/hacktiv8.png" alt="hacktiv8"/>
         </a>

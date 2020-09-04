@@ -1,7 +1,37 @@
 import React, { Component } from 'react';
 
+
 class Portfolio extends Component {
+
+  state = {
+    data: []
+  }
+
+  componentFetchData(){
+    const urlFetch = fetch('https://api.github.com/user/repos', {
+      method: 'get',
+      headers: new Headers({
+        'token':  "14f9caf1d005f3f04bec916d51df47b1572dac14",
+        'content-type': 'application/json; charset=utf-8',
+      })
+    })
+
+    urlFetch.then( res => {
+      if(res.status === 200)
+         return res.json()   
+   }).then( resJson => console.log("fetch result = ", resJson))
+    // {
+      // console.log(resJson)
+      // this.setState({
+      //     data: resJson
+      // })
+  //  })
+  }
+
   render() {
+
+    
+    // console.log(this.componentFetchData)
 
     if(this.props.data){
       var projects = this.props.data.projects.map(function(projects){
